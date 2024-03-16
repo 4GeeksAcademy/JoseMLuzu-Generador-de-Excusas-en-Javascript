@@ -17,19 +17,19 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  let whoRan = Math.floor(Math.random() * who.length);
-  let actionRan = Math.floor(Math.random() * action.length);
-  let whatRan = Math.floor(Math.random() * what.length);
-  let whenRan = Math.floor(Math.random() * when.length);
+  let whoRandom = Math.floor(Math.random() * who.length);
+  let actionRandom = Math.floor(Math.random() * action.length);
+  let whatRandom = Math.floor(Math.random() * what.length);
+  let whenRandom = Math.floor(Math.random() * when.length);
 
   let excuse =
-    who[whoRan] +
+    who[whoRandom] +
     " " +
-    action[actionRan] +
+    action[actionRandom] +
     " " +
-    what[whatRan] +
+    what[whatRandom] +
     " " +
-    when[whenRan];
+    when[whenRandom];
 
   document.getElementById("excuse").innerText = excuse;
 };
